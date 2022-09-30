@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: #efcdff;
+    height: 80px;
+}
+
+h1{
+    padding: 30px;
+}
+
+.caixaDePesquisa{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+input, button{
+    margin-left: 10px;
+    height: 20px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.signo-1, .signo-2, .signo-3, 
+.signo-4, .signo-5, .signo-6, 
+.signo-7, .signo-8,.signo-9, 
+.signo-10, .signo-11, .signo-12 {
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 440px;
+    height: 230px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #884480;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section > img{
+    border: 1px solid gray;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+li{
+    color:#efcdff
+}
+
+footer{
+    font-family: Helvetica;
+    width: 100%;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
