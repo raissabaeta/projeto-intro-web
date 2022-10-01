@@ -1,3 +1,8 @@
+window.onload = () => {
+    particlesJS.load('particles-js', './particles.json', function () {
+      console.log('callback - particles.js config loaded');
+    });
+  }
 
 let signos = []
 
@@ -206,119 +211,37 @@ if(signo12.verificaViva === true){
 }
 
 
-console.log(signos)
-
 for(signo of signos){
     for(signoDaFamosa in signo){
-        console.log(`Signo: ${signo[signoDaFamosa]}`)
+        console.log(`Signo: ${signo.signo.toUpperCase()}`)
+    }
+    for(nomeDaFamosa in signo){
+        console.log(`Nome: ${signo.nomeDaFamosa}`)
     }
     for(idadeDaFamosa in signo){
-        console.log(`idade: ${signo[idadeDaFamosa]}`)
+        console.log(`Idade: ${signo.idadeDaFamosa}`)
+    }
+    for(diaAniversario in signo){
+        console.log(`Dia do aniversário da famosa: ${signo.diaAniversario}`)
+    }
+    for(caracteristicasSigno in signo){
+        console.log(`Principais características do signo: ${signo.caracteristicasSigno}`)
+    }
+    for(verificaViva in signo){
+        console.log(`Verifica se está viva: ${signo.verificaViva}`)
     }
 }
 
-// const calculaMediaIdade = Number(idadeDaFamosa1 + idadeDaFamosa2 + idadeDaFamosa3 +
-//     idadeDaFamosa4 + idadeDaFamosa5 + idadeDaFamosa6 + idadeDaFamosa7 + idadeDaFamosa8
-//     + idadeDaFamosa9 + idadeDaFamosa10 + idadeDaFamosa11 + idadeDaFamosa12) / 12;
-// console.log(calculaMediaIdade)
+const calculaMediaIdade = Number(signo1.idadeDaFamosa + signo2.idadeDaFamosa + signo3.idadeDaFamosa + signo4.idadeDaFamosa +
+signo5.idadeDaFamosa + signo6.idadeDaFamosa + signo7.idadeDaFamosa + signo8.idadeDaFamosa + signo9.idadeDaFamosa + signo10.idadeDaFamosa +
+signo11.idadeDaFamosa + signo12.idadeDaFamosa) / 12;
 
-// const verificaBooleano = verificaViva1 && verificaViva2 && verificaViva3 && verificaViva4 && verificaViva5
-//     && verificaViva6 && verificaViva7 && verificaViva8 && verificaViva9 && verificaViva10 && verificaViva11 && verificaViva12 === true;
-// console.log(verificaBooleano)
+console.log(` A média das idades das famosas é ${calculaMediaIdade}`)
 
 
-// console.log(`${signo1.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa1}
-// Idade: ${idadeDaFamosa1}
-// Dia do aniversário: ${diaAniversario1}
-// Características do signo: ${caracteristicasSigno1}
-// Está viva?: ${verificaViva1}
-// `)
+const verificaBooleano = signo1.verificaViva && signo2.verificaViva && signo3.verificaViva && 
+signo4.verificaViva && signo5.verificaViva && signo6.verificaViva && signo7.verificaViva &&
+signo8.verificaViva && signo9.verificaViva && signo10.verificaViva && signo11.verificaViva && signo12.verificaViva === true;
 
-// console.log(`${signo2.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa2}
-// Idade: ${idadeDaFamosa2}
-// Dia do aniversário: ${diaAniversario2}
-// Características do signo: ${caracteristicasSigno2}
-// Está viva?: ${verificaViva2}
-// `)
+console.log(`A verificação dos valores booleanos é ${verificaBooleano}`)
 
-// console.log(`${signo3.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa3}
-// Idade: ${idadeDaFamosa3}
-// Dia do aniversário: ${diaAniversario3}
-// Características do signo: ${caracteristicasSigno3}
-// Está viva?: ${verificaViva3}
-// `)
-
-// console.log(`${signo4.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa4}
-// Idade: ${idadeDaFamosa4}
-// Dia do aniversário: ${diaAniversario4}
-// Características do signo: ${caracteristicasSigno4}
-// Está viva?: ${verificaViva4}
-// `)
-
-// console.log(`${signo5.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa5}
-// Idade: ${idadeDaFamosa5}
-// Dia do aniversário: ${diaAniversario5}
-// Características do signo: ${caracteristicasSigno5}
-// Está viva?: ${verificaViva5}
-// `)
-
-// console.log(`${signo6.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa6}
-// Idade: ${idadeDaFamosa6}
-// Dia do aniversário: ${diaAniversario6}
-// Características do signo: ${caracteristicasSigno6}
-// Está viva?: ${verificaViva6}
-// `)
-
-// console.log(`${signo7.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa7}
-// Idade: ${idadeDaFamosa7}
-// Dia do aniversário: ${diaAniversario7}
-// Características do signo: ${caracteristicasSigno7}
-// Está viva?: ${verificaViva7}
-// `)
-
-// console.log(`${signo8.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa8}
-// Idade: ${idadeDaFamosa8}
-// Dia do aniversário: ${diaAniversario8}
-// Características do signo: ${caracteristicasSigno8}
-// Está viva?: ${verificaViva8}
-// `)
-
-// console.log(`${signo9.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa9}
-// Idade: ${idadeDaFamosa9}
-// Dia do aniversário: ${diaAniversario9}
-// Características do signo: ${caracteristicasSigno9}
-// Está viva?: ${verificaViva9}
-// `)
-
-// console.log(`${signo10.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa10}
-// Idade: ${idadeDaFamosa10}
-// Dia do aniversário: ${diaAniversario10}
-// Características do signo: ${caracteristicasSigno10}
-// Está viva?: ${verificaViva10}
-// `)
-
-// console.log(`${signo11.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa11}
-// Idade: ${idadeDaFamosa11}
-// Dia do aniversário: ${diaAniversario11}
-// Características do signo: ${caracteristicasSigno11}
-// Está viva?: ${verificaViva11}
-// `)
-
-// console.log(`${signo12.toUpperCase()} 
-// Nome da Famosa: ${nomeDaFamosa12}
-// Idade: ${idadeDaFamosa12}
-// Dia do aniversário: ${diaAniversario12}
-// Características do signo: ${caracteristicasSigno12}
-// Está viva?: ${verificaViva12}
-// `)
