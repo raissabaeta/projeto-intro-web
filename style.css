@@ -9,7 +9,9 @@ body{
     overflow:scroll;
     width: 100%;
 }
-
+section {
+    background-color: #ded9d5;
+}
 header{
     background-color: #efcdff;
     height: 80px;
@@ -80,6 +82,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #ded9d5;
 }
 
 section > img{
@@ -97,5 +100,6 @@ footer{
     padding: 20px;
     text-align: center;
     font-weight: bold;
+    background-color: #efcdff;
 }
 
