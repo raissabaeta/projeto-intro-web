@@ -1,9 +1,3 @@
-window.onload = () => {
-    particlesJS.load('particles-js', './particles.json', function () {
-      console.log('callback - particles.js config loaded');
-    });
-  }
-
 let signos = []
 
 let caracteristicasSigno = ["Sincerona", "Independente", "Competitiva", "Cheia de energia"].toString()
@@ -231,6 +225,9 @@ for(signo of signos){
         console.log(`Verifica se está viva: ${signo.verificaViva}`)
     }
 }
+
+// const lista = document.getElementById("listas")
+// listas.innerHTML = signos[1]
 
 const calculaMediaIdade = Number(signo1.idadeDaFamosa + signo2.idadeDaFamosa + signo3.idadeDaFamosa + signo4.idadeDaFamosa +
 signo5.idadeDaFamosa + signo6.idadeDaFamosa + signo7.idadeDaFamosa + signo8.idadeDaFamosa + signo9.idadeDaFamosa + signo10.idadeDaFamosa +
