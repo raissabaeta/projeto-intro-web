@@ -226,8 +226,18 @@ for(signo of signos){
     }
 }
 
-// const lista = document.getElementById("listas")
-// listas.innerHTML = signos[1]
+function fazPesquisa (array, string){
+    for(let i in signos){
+        if(array[i].signo === string){
+            return console.log(array[i])
+        } else {
+            alert("Nenhum item encontrado")
+        }
+    }
+}
+
+fazPesquisa(signos, "Touro")
+
 
 const calculaMediaIdade = Number(signo1.idadeDaFamosa + signo2.idadeDaFamosa + signo3.idadeDaFamosa + signo4.idadeDaFamosa +
 signo5.idadeDaFamosa + signo6.idadeDaFamosa + signo7.idadeDaFamosa + signo8.idadeDaFamosa + signo9.idadeDaFamosa + signo10.idadeDaFamosa +
