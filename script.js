@@ -226,17 +226,17 @@ for(signo of signos){
     }
 }
 
-function fazPesquisa (array, string){
-    for(let i in signos){
-        if(array[i].signo === string){
-            return console.log(array[i])
-        } else {
-            alert("Nenhum item encontrado")
-        }
-    }
-}
+// function fazPesquisa (array, string){
+//     for(let i in signos){
+//         if(array[i].signo === string){
+//             return console.log(array[i])
+//         } else {
+//             alert("Nenhum item encontrado")
+//         }
+//     }
+// }
 
-fazPesquisa(signos, "Touro")
+// fazPesquisa(signos, "Touro")
 
 
 const calculaMediaIdade = Number(signo1.idadeDaFamosa + signo2.idadeDaFamosa + signo3.idadeDaFamosa + signo4.idadeDaFamosa +
@@ -252,3 +252,27 @@ signo8.verificaViva && signo9.verificaViva && signo10.verificaViva && signo11.ve
 
 console.log(`A verificação dos valores booleanos é ${verificaBooleano}`)
 
+
+function buscaSigno(){
+    let input = document.getElementById('barraDePesquisa').value
+    let x = document.getElementsByClassName("signo");
+
+    for(let i = 0; i < x.length; i++){
+        if(!x.innerHTML.toLowerCase().includes(input)){
+            x[i].style.display="none";
+
+        } else {
+            x[i].style.display="list-item"
+        }
+    
+    console.log(input);
+    }
+
+
+    
+
+
+
+
+
+}

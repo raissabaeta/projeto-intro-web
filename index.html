@@ -10,18 +10,19 @@
 </head>
 <body>
 <header>
+    <img src="images/logo.png" alt="imagem do logo de Signos">
 <h1>Confira seu horóscopo e veja o signo das famosas</h1>
 </header>
 <main id="#main">
 <section class="caixaDePesquisa">
-    <input type="text" placeholder="Pesquise um signo aqui">
-    <button onclick="buscarLista()">Buscar</button>
+    <input id=”barraDePesquisa” onkeyup="buscaSigno()" type="search" name="search" placeholder="Pesquise um signo aqui">
+    <button>Buscar</button>
 </section>
 <div class="container">
 <section class="signo-1">
     <img src="images/anitta.jpg" alt="Cantora Anitta recebendo prêmio">
     <ul>
-        <li id="listas">
+        <li id="listas" class="signo">
             <a href="https://www.personare.com.br/aries" target="_blank">
                 Signo: Áries
             </a>
@@ -46,11 +47,7 @@
 <section class="signo-2">
     <img src="images/lizzo2.jpg" alt="Cantora Lizzo">
     <ul>
-        <li>
-            <a href="https://www.personare.com.br/touro" target="_blank">
-                Signo: Touro
-            </a>
-        </li>
+        <li class="signo"> Signo: Touro </li>
         <li>
             Nome: Lizzo
         </li>
@@ -71,7 +68,7 @@
 <section class="signo-3">
     <img src="images/angelina-jolie.jpg" alt="Atriz Angelina Jolie">
     <ul>
-        <li>
+        <li class="signo">
             <a href="https://www.personare.com.br/gemeos" target="_blank">
                 Signo: Gêmeos
             </a>
@@ -96,7 +93,7 @@
 <section class="signo-4">
     <img src="images/Diana.jpg" alt="Atriz Angelina Jolie">
     <ul>
-        <li>
+        <li class="signo">
             <a href="https://www.personare.com.br/cancer" target="_blank">
                 Signo: Câncer
             </a> 
@@ -121,7 +118,7 @@
 <section class="signo-5">
     <img src="images/madonna1 (1).jpg" alt="Atriz Angelina Jolie">
     <ul>
-        <li>
+        <li class="signo">
             <a href="https://www.personare.com.br/leao" target="_blank">
                 Signo: Leão
             </a>
@@ -146,7 +143,7 @@
 <section class="signo-6">
     <img src="images/queen1.jpeg" alt="Atriz Angelina Jolie">
     <ul>
-        <li>
+        <li class="signo">
             <a href="https://www.personare.com.br/virgem" target="_blank">
                 Signo: Virgem
             </a>
@@ -172,7 +169,7 @@
 <section class="signo-7">
     <img src="images/pitty1.jpg" alt="Atriz Angelina Jolie">
     <ul>
-        <li>
+        <li class="signo">
             <a href="https://www.personare.com.br/libra" target="_blank">
                 Signo: Libra
             </a>
@@ -197,7 +194,7 @@
 <section class="signo-8">
     <img src="images/brunalinze (1).jpg" alt="Atriz Angelina Jolie">
     <ul>
-        <li>
+        <li class="signo">
             <a href="https://www.personare.com.br/escorpiao" target="_blank">
                 Signo: Escorpião
             </a>
@@ -222,7 +219,7 @@
 <section class="signo-9">
     <img src="images/mileycyrus1 (1).jpg" alt="Atriz Angelina Jolie">
     <ul>
-        <li>
+        <li class="signo">
             <a href="https://www.personare.com.br/sagitario" target="_blank">
                 Signo: Sagitário
             </a>
@@ -247,7 +244,7 @@
 <section class="signo-10">
     <img src="images/rita.jpg" alt="Atriz Angelina Jolie">
     <ul>
-        <li>
+        <li class="signo">
             <a href="https://www.personare.com.br/capricornio" target="_blank">
                 Signo: Capricórnio
             </a>
@@ -272,7 +269,7 @@
 <section class="signo-11">
     <img src="images/jenniferafriends (1).jpg" alt="Atriz Angelina Jolie">
     <ul>
-        <li>
+        <li class="signo">
             <a href="https://www.personare.com.br/aquario" target="_blank">
                 Signo: Aquário
             </a>
@@ -297,7 +294,7 @@
 <section class="signo-12">
     <img src="images/Marta-Destaque (1).png" alt="Atriz Angelina Jolie">
     <ul>
-        <li>
+        <li class="signo">
             <a href="https://www.personare.com.br/peixes" target="_blank">
                 Signo: Peixes
             </a>

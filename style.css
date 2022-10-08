@@ -10,19 +10,25 @@ body{
     width: 100%;
 }
 section {
-    background-color: #ded9d5;
+    background-color: #efcdff;
 }
 header{
-    background-color: #efcdff;
+    display: flex;
     height: 20vh;
+}
+
+header > img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
 }
 
 h1{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
+    font-weight: 400;
     padding: 50px;
-    color: gray;
+    color: lightslategray;
 }
 
 .caixaDePesquisa{
@@ -111,5 +117,7 @@ footer{
 }
 
 
-  
+.signo{
+    display: list-item;
+}  
 
