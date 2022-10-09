@@ -18,8 +18,8 @@ header{
 }
 
 header > img {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 
@@ -75,10 +75,10 @@ a {
     color: #efcdff;
 }
 
-.signo-1, .signo-2, .signo-3, 
-.signo-4, .signo-5, .signo-6, 
-.signo-7, .signo-8,.signo-9, 
-.signo-10, .signo-11, .signo-12 {
+#signo-1, #signo-2, #signo-3, 
+#signo-4, #signo-5, #signo-6, 
+#signo-7, #signo-8,#signo-9, 
+#signo-10, #signo-11, #signo-12 {
     border: 1px solid black;
     margin-top: 10px;
     width: 440px;
@@ -116,8 +116,57 @@ footer{
     background-color: #efcdff;
 }
 
+.signo {
+    list-style: none;
+} 
 
-.signo{
-    display: list-item;
-}  
+@media only screen and (max-width: 614px) {
+    * {
+      box-sizing: border-box;
+    }
+    .container {
+      width: 100%;
+      margin: 0;
+    }
 
+    header {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    header > img {
+        width: 100px;
+        height: 100px;
+    }
+  
+    h1 {
+        padding: 0;
+        text-align: center;
+    }
+
+    input {
+        height: 6vh;
+    }
+
+
+    #signo-1, #signo-2, #signo-3, 
+    #signo-4, #signo-5, #signo-6, 
+    #signo-7, #signo-8,#signo-9, 
+    #signo-10, #signo-11, #signo-12 {
+        width: 400px;
+        height: 200px;
+        padding: 0;
+}
+    footer {
+      display: flex;
+      justify-content: space-evenly;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      background-color: #ffffff;
+      border: 1px solid #dbdbdb;
+      height: 54px;
+      width: 100%;
+      align-items: center;
+    }
+  }

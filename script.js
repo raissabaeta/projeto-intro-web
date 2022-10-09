@@ -253,26 +253,20 @@ signo8.verificaViva && signo9.verificaViva && signo10.verificaViva && signo11.ve
 console.log(`A verificação dos valores booleanos é ${verificaBooleano}`)
 
 
-function buscaSigno(){
-    let input = document.getElementById('barraDePesquisa').value
-    let x = document.getElementsByClassName("signo");
-
-    for(let i = 0; i < x.length; i++){
-        if(!x.innerHTML.toLowerCase().includes(input)){
+function exibirInput(){
+    let input = document.getElementById('busca').value
+    input=input.toLowerCase();
+    console.log(input)
+    let x = document.getElementsByClassName('signo');
+    console.log(x)
+    for(let i in x){
+        if(!x[i].innerHTML.toLowerCase().includes(input)){
             x[i].style.display="none";
 
         } else {
             x[i].style.display="list-item"
         }
-    
-    console.log(input);
     }
-
-
-    
-
-
-
-
-
 }
+
+
