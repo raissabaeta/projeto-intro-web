@@ -59,6 +59,7 @@ input {
 
 ul {
     list-style: none;
+    
 }
 
 li {
@@ -68,6 +69,7 @@ li {
     justify-content: center;
     text-align: center;
     color:#efcdff
+    
 }
 
 a {
@@ -75,19 +77,16 @@ a {
     color: #efcdff;
 }
 
-#signo-1, #signo-2, #signo-3, 
-#signo-4, #signo-5, #signo-6, 
-#signo-7, #signo-8,#signo-9, 
-#signo-10, #signo-11, #signo-12 {
+.signo {
     border: 1px solid black;
     margin-top: 10px;
     width: 440px;
     height: 230px;
     padding: 10px;
     display: flex;
-    text-align: center;
     background-color: #884480;
     box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
+    list-style: none;
 }
 
 .container{
@@ -116,9 +115,7 @@ footer{
     background-color: #efcdff;
 }
 
-.signo {
-    list-style: none;
-} 
+
 
 @media only screen and (max-width: 614px) {
     * {

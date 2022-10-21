@@ -153,7 +153,7 @@ if(signo3.verificaViva === true){
 if(signo4.verificaViva === true){
     signos.push(signo4)
 } else {
-    alert(`${signo4.nomeDaFamosa} não foi adicionada`)
+    // alert(`${signo4.nomeDaFamosa} não foi adicionada`)
 }
 
 if(signo5.verificaViva === true){
@@ -256,16 +256,15 @@ console.log(`A verificação dos valores booleanos é ${verificaBooleano}`)
 function exibirInput(){
     let input = document.getElementById('busca').value
     input=input.toLowerCase();
-    console.log(input)
     let x = document.getElementsByClassName('signo');
-    console.log(x)
     for(let i in x){
         if(!x[i].innerHTML.toLowerCase().includes(input)){
             x[i].style.display="none";
 
         } else {
-            x[i].style.display="list-item"
+            x[i].style.display="flex"
         }
+        
     }
 }
 
