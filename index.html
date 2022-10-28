@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famosas e seus signos</title>
+    <title>Signos das Famosas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body id="particles-js">
+<body>
 <header>
-<h1>Signos das Famosas</h1>
+    <img src="images/logo.png" alt="imagem do logo de Signos">
+<h1>Confira seu horóscopo e veja o signo das famosas</h1>
 </header>
-<main>
+<main id="#main">
 <section class="caixaDePesquisa">
-    <input type="text" placeholder="Pesquise aqui">
-    <button>Buscar</button>
+    <label for="barraDePesquisa"></label>
+    <input type="text" id="busca" onkeyup="exibirInput()" name="busca" placeholder="Pesquise o seu signo aqui" required>
 </section>
 <div class="container">
-<section class="signo-1">
+<section class="signo" id="signo-1">
     <img src="images/anitta.jpg" alt="Cantora Anitta recebendo prêmio">
     <ul>
         <li>
-            Signo: Áries
+            <a href="https://www.personare.com.br/aries" target="_blank">
+                Signo: Áries
+            </a>
         </li>
         <li>
             Nome: Anitta
@@ -33,19 +37,17 @@
             Dia do aniversario: 30 de março
         </li>
         <li>
-            Caracteristicas do signo: "Sincerona", "Independente", "Competitiva", "Cheia de energia"
+            Caracteristicas do signo: Sincerona, Independente, Competitiva, Cheia de energia.
         </li>
         <li>
             Está viva? Sim!
         </li>
     </ul>
 </section>
-<section class="signo-2">
+<section class="signo" id="signo-2">
     <img src="images/lizzo2.jpg" alt="Cantora Lizzo">
     <ul>
-        <li>
-            Signo: Touro
-        </li>
+        <li> <a href="https://www.personare.com.br/touro" target="_blank">Signo: Touro</a></li>
         <li>
             Nome: Lizzo
         </li>
@@ -56,18 +58,20 @@
             Dia do aniversario: 27 de abril
         </li>
         <li>
-            Caracteristicas do signo: "Ciumenta", "Leal", "Prestativa", "Dedicada"
+            Caracteristicas do signo: Ciumenta, Leal, Prestativa, Dedicada.
         </li>
         <li>
             Está viva? Sim!
         </li>
     </ul>
 </section>
-<section class="signo-3">
+<section class="signo" id="signo-3">
     <img src="images/angelina-jolie.jpg" alt="Atriz Angelina Jolie">
     <ul>
         <li>
-            Signo: Gêmeos
+            <a href="https://www.personare.com.br/gemeos" target="_blank">
+                Signo: Gêmeos
+            </a>
         </li>
         <li>
             Nome: Angelina Jolie
@@ -79,18 +83,20 @@
             Dia do aniversario: 4 de junho
         </li>
         <li>
-            Caracteristicas do signo: "Divertida", "Comunicativa", "Boa ouvinte", "Insegura"
+            Caracteristicas do signo: Divertida, Comunicativa, Boa ouvinte, Insegura.
         </li>
         <li>
             Está viva? Sim!
         </li>
     </ul>
 </section>
-<section class="signo-4">
-    <img src="images/lizzo2.jpg" alt="Atriz Angelina Jolie">
+<section class="signo" id="signo-4">
+    <img src="images/Diana.jpg" alt="Atriz Angelina Jolie">
     <ul>
         <li>
-            Signo: Câncer
+            <a href="https://www.personare.com.br/cancer" target="_blank">
+                Signo: Câncer
+            </a> 
         </li>
         <li>
             Nome: Princesa Diana
@@ -102,18 +108,20 @@
             Dia do aniversario: 1 de julho
         </li>
         <li>
-            Caracteristicas do signo: "Romântica", "Sonhadora", "Fiel", "Dramática"
+            Caracteristicas do signo: Romântica, Sonhadora, Fiel, Dramática.
         </li>
         <li>
             Está viva? Não!
         </li>
     </ul>
 </section>
-<section class="signo-5">
-    <img src="images/lizzo2.jpg" alt="Atriz Angelina Jolie">
+<section class="signo" id="signo-5">
+    <img src="images/madonna1 (1).jpg" alt="Atriz Angelina Jolie">
     <ul>
         <li>
-            Signo: Leão
+            <a href="https://www.personare.com.br/leao" target="_blank">
+                Signo: Leão
+            </a>
         </li>
         <li>
             Nome: Madonna
@@ -125,18 +133,20 @@
             Dia do aniversario: 16 de agosto
         </li>
         <li>
-            Caracteristicas do signo: "Vaidosa", "Confiante", "Alegre", "Orgulhosa"
+            Caracteristicas do signo: Vaidosa, Confiante, Alegre, Orgulhosa.
         </li>
         <li>
             Está viva? Sim!
         </li>
     </ul>
 </section>
-<section class="signo-6">
-    <img src="images/lizzo2.jpg" alt="Atriz Angelina Jolie">
+<section class="signo" id="signo-6">
+    <img src="images/queen1.jpeg" alt="Atriz Angelina Jolie">
     <ul>
         <li>
-            Signo: Virgem
+            <a href="https://www.personare.com.br/virgem" target="_blank">
+                Signo: Virgem
+            </a>
         </li>
         <li>
             Nome: Beyoncé
@@ -148,18 +158,21 @@
             Dia do aniversario: 4 de setembro
         </li>
         <li>
-            Caracteristicas do signo: "Inteligente", "Detalhista", "Discreta", "Organizada"
+            Caracteristicas do signo: 
+            Inteligente, Detalhista, Discreta, Organizada
         </li>
         <li>
             Está viva? Sim!
         </li>
     </ul>
 </section>
-<section class="signo-7">
-    <img src="images/lizzo2.jpg" alt="Atriz Angelina Jolie">
+<section class="signo" id="signo-7">
+    <img src="images/pitty1.jpg" alt="Atriz Angelina Jolie">
     <ul>
         <li>
-            Signo: Libra
+            <a href="https://www.personare.com.br/libra" target="_blank">
+                Signo: Libra
+            </a>
         </li>
         <li>
             Nome: Pitty
@@ -171,18 +184,20 @@
             Dia do aniversario: 7 de outubro
         </li>
         <li>
-            Caracteristicas do signo: "Indecisa", "Justiceira", "Sociável", "Empática"
+            Caracteristicas do signo: Indecisa, Justiceira, Sociável, Empática.
         </li>
         <li>
             Está viva? Sim!
         </li>
     </ul>
 </section>
-<section class="signo-8">
-    <img src="images/lizzo2.jpg" alt="Atriz Angelina Jolie">
+<section class="signo" id="signo-8">
+    <img src="images/brunalinze (1).jpg" alt="Atriz Angelina Jolie">
     <ul>
         <li>
-            Signo: Escorpião
+            <a href="https://www.personare.com.br/escorpiao" target="_blank">
+                Signo: Escorpião
+            </a>
         </li>
         <li>
             Nome: Bruna Linzmeyer
@@ -194,18 +209,20 @@
             Dia do aniversario: 11 de novembro
         </li>
         <li>
-            Caracteristicas do signo: "Misteriosa", "Intensa", "Determinada", "Ambiciosa"
+            Caracteristicas do signo: Misteriosa, Intensa, Determinada, Ambiciosa.
         </li>
         <li>
             Está viva? Sim!
         </li>
     </ul>
 </section>
-<section class="signo-9">
-    <img src="images/lizzo2.jpg" alt="Atriz Angelina Jolie">
+<section class="signo" id="signo-9">
+    <img src="images/mileycyrus1 (1).jpg" alt="Atriz Angelina Jolie">
     <ul>
         <li>
-            Signo: Sagitário
+            <a href="https://www.personare.com.br/sagitario" target="_blank">
+                Signo: Sagitário
+            </a>
         </li>
         <li>
             Nome: Miley Cyrus
@@ -217,18 +234,20 @@
             Dia do aniversario: 23 de novembro
         </li>
         <li>
-            Caracteristicas do signo: "Segura", "Inspiradora", "Curiosa", "Impaciente"
+            Caracteristicas do signo: Segura, Inspiradora, Curiosa, Impaciente.
         </li>
         <li>
             Está viva? Sim!
         </li>
     </ul>
 </section>
-<section class="signo-10">
-    <img src="images/lizzo2.jpg" alt="Atriz Angelina Jolie">
+<section class="signo" id="signo-10">
+    <img src="images/rita.jpg" alt="Atriz Angelina Jolie">
     <ul>
         <li>
-            Signo: Capricórnio
+            <a href="https://www.personare.com.br/capricornio" target="_blank">
+                Signo: Capricórnio
+            </a>
         </li>
         <li>
             Nome: Rita Lee
@@ -240,18 +259,20 @@
             Dia do aniversario: 31 de dezembro
         </li>
         <li>
-            Caracteristicas do signo: "Disciplinada", "Focada", "Determinada", "Madura"
+            Caracteristicas do signo: Disciplinada, Focada, Determinada, Madura.
         </li>
         <li>
             Está viva? Sim!
         </li>
     </ul>
 </section>
-<section class="signo-11">
-    <img src="images/lizzo2.jpg" alt="Atriz Angelina Jolie">
+<section class="signo" id="signo-11">
+    <img src="images/jenniferafriends (1).jpg" alt="Atriz Angelina Jolie">
     <ul>
         <li>
-            Signo: Aquário
+            <a href="https://www.personare.com.br/aquario" target="_blank">
+                Signo: Aquário
+            </a>
         </li>
         <li>
             Nome: Jennifer Aniston
@@ -263,18 +284,20 @@
             Dia do aniversario: 11 de fevereiro
         </li>
         <li>
-            Caracteristicas do signo: "Criativa", "Teimosa", "Inventiva", "Exagerada"
+            Caracteristicas do signo: Criativa, Teimosa, Inventiva, Exagerada.
         </li>
         <li>
             Está viva? Sim!
         </li>
     </ul>
 </section>
-<section class="signo-12">
-    <img src="images/lizzo2.jpg" alt="Atriz Angelina Jolie">
+<section class="signo" id="signo-12">
+    <img src="images/Marta-Destaque (1).png" alt="Atriz Angelina Jolie">
     <ul>
         <li>
-            Signo: Peixes
+            <a href="https://www.personare.com.br/peixes" target="_blank">
+                Signo: Peixes
+            </a>
         </li>
         <li>
             Nome: Marta
@@ -286,7 +309,7 @@
             Dia do aniversario: 19 de fevereiro
         </li>
         <li>
-            Caracteristicas do signo: "Sensível", "Generosa", "Calma", "Forte"
+            Caracteristicas do signo: Sensível, Generosa, Calma, Forte.
         </li>
         <li>
             Está viva? Sim!
@@ -298,16 +321,14 @@
 <footer>
 <p>Criado com ❤️ por Raissa</p>
 <a href="https://github.com/raissabaeta" target="_blank">
-    <img src="images/github.png" style="width: 25px">
+    <img src="images/icone-GitHub.png" style="width:28px;">
 </a>
 <a href="https://www.linkedin.com/in/raissa-baeta/" target="_blank">
-    <img src="images/linkedin.png" style="width: 45px">
+    <img src="images/Icone-Linkedin.png" style="width:30px">
 </a>
 <a href="https://www.instagram.com/rahbaeta/" target="_blank">
-    <img src="images/Instagram-Icon.png" style="width: 20px">
+    <img src="images/Instagram.svg.png" style="width:25px">
 </a>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
